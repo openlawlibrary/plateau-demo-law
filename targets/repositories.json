@@ -1,0 +1,21 @@
+{
+    "repositories": {
+        "openlawlibrary/plateau-demo-law-xml": {
+            "urls": [
+                "https://github.com/openlawlibrary/plateau-demo-law-xml.git"
+            ],
+            "custom": {
+                "type": "xml",
+                "allow-unauthenticated-commits": true
+            }
+        },
+        "openlawlibrary/plateau-demo-law-html": {
+            "urls": [
+                "https://github.com/openlawlibrary/plateau-demo-law-html.git"
+            ],
+            "custom": {
+                "type": "html"
+            }
+        }
+    }
+}
