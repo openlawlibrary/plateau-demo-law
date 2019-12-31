@@ -14,7 +14,8 @@
                 "https://github.com/openlawlibrary/plateau-demo-law-html.git"
             ],
             "custom": {
-                "type": "html"
+                "type": "html",
+                "allow-unauthenticated-commits": true
             }
         }
     }
