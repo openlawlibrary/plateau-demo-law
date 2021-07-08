@@ -1,21 +1,23 @@
 {
     "repositories": {
         "openlawlibrary/plateau-demo-law-xml": {
-            "urls": [
-                "https://github.com/openlawlibrary/plateau-demo-law-xml.git"
-            ],
             "custom": {
                 "type": "xml",
                 "allow-unauthenticated-commits": true
             }
         },
         "openlawlibrary/plateau-demo-law-html": {
-            "urls": [
-                "https://github.com/openlawlibrary/plateau-demo-law-html.git"
-            ],
             "custom": {
                 "type": "html",
                 "allow-unauthenticated-commits": true
+            }
+        },
+        "openlawlibrary/law-static-assets": {
+            "custom": {
+                "type":"static-assets",
+                "allow-unauthenticated-commits":true,
+                "serve":"latest",
+                "location_regex":"~.+(_document|_reader).+$"
             }
         }
     }
