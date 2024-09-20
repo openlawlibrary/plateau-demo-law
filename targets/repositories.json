@@ -3,13 +3,19 @@
         "openlawlibrary/plateau-demo-law-xml": {
             "custom": {
                 "type": "xml",
-                "allow-unauthenticated-commits": true
+                "allow-unauthenticated-commits": true,
+                "serve": "latest",
+                "serve-prefix": "_uncodified_xml"
             }
         },
         "openlawlibrary/plateau-demo-law-html": {
             "custom": {
                 "type": "html",
-                "allow-unauthenticated-commits": true
+                "allow-unauthenticated-commits": true,
+                "location_regex": "/",
+                "routes": [
+                    ".*"
+                ]
             }
         },
         "openlawlibrary/law-static-assets": {
@@ -17,7 +23,12 @@
                 "type":"static-assets",
                 "allow-unauthenticated-commits":true,
                 "serve":"latest",
-                "location_regex":"~.+(_document|_reader).+$"
+                "location_regex":"~.+(_document|_reader).+$",
+                "is_fallback": true,
+                "routes": [
+                    ".*/_document/.*",
+                    "_reader/.*"
+                ]
             }
         }
     }
