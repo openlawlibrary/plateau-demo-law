@@ -12,6 +12,7 @@
             "custom": {
                 "type": "html",
                 "allow-unauthenticated-commits": true,
+                "serve": "latest",
                 "location_regex": "/",
                 "routes": [
                     ".*"
